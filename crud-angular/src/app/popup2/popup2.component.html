@@ -1,0 +1,89 @@
+<div style="background-color: #a06df2;  text-align:center; height: 100px;">
+<h1 style="margin-left:650px; width: 0%; margin-top: 35px; color:white;        position: absolute;">Solicitações</h1>
+
+</div>
+
+<mat-form-field>
+  <mat-label>Consulta</mat-label>
+  <input matInput (keyup)="applyFilter($event)" placeholder="Buscar solicitação" #input>
+</mat-form-field>
+
+<table  mat-table [dataSource]="dataSource" class="mat-elevation-z8">
+
+    <!--- Note that these columns can be defined in any order.
+          The actual rendered columns are set as a property on the row definition" -->
+  
+    <!-- Name Column -->
+    <ng-container matColumnDef="descricao">
+      <th mat-header-cell *matHeaderCellDef> Descrição </th>
+      <td mat-cell *matCellDef="let element"> {{element.descricao}} </td>
+    </ng-container>
+  
+    <!-- Weight Column -->
+    <ng-container matColumnDef="unidade">
+      <th mat-header-cell *matHeaderCellDef> Unidade </th>
+      <td mat-cell *matCellDef="let element"> {{element.unidade}} </td>
+    </ng-container>
+  
+    <!-- Symbol Column -->
+    <ng-container matColumnDef="area">
+      <th mat-header-cell *matHeaderCellDef> Area </th>
+      <td mat-cell *matCellDef="let element"> {{element.area}} </td>
+    </ng-container>
+
+    <ng-container matColumnDef="regional">
+      <th mat-header-cell *matHeaderCellDef> Regional </th>
+      <td mat-cell *matCellDef="let element"> {{element.regional}} </td>
+    </ng-container>
+
+    <ng-container matColumnDef="marca">
+      <th mat-header-cell *matHeaderCellDef> Marca </th>
+      <td mat-cell *matCellDef="let element"> {{element.marca}} </td>
+    </ng-container>
+
+    <ng-container matColumnDef="elogio">
+      <th mat-header-cell *matHeaderCellDef> Elogio </th>
+      <td mat-cell *matCellDef="let element"> {{element.elogio}} </td>
+    </ng-container>
+
+    <ng-container matColumnDef="reclamacao">
+      <th mat-header-cell *matHeaderCellDef> Reclamação </th>
+      <td mat-cell *matCellDef="let element"> {{element.reclamacao}} </td>
+    </ng-container>
+
+    <ng-container matColumnDef="sugestao">
+      <th mat-header-cell *matHeaderCellDef> Sugestão </th>
+      <td mat-cell *matCellDef="let element"> {{element.sugestao}} </td>
+    </ng-container>
+
+    <ng-container matColumnDef="solicita">
+      <th mat-header-cell *matHeaderCellDef> Solicitação </th>
+      <td mat-cell *matCellDef="let element"> {{element.solicita}} </td>
+    </ng-container>
+
+
+
+    <ng-container matColumnDef="fato">
+      <th mat-header-cell *matHeaderCellDef> Fato </th>
+      <td mat-cell *matCellDef="let element"> {{element.fato}} </td>
+    </ng-container>
+    <ng-container matColumnDef="username">
+      <th mat-header-cell *matHeaderCellDef> Funcionario </th>
+      <td mat-cell *matCellDef="let element"> {{element.funcionario.username}} </td>
+    </ng-container>
+  
+    <tr mat-header-row *matHeaderRowDef="displayColumns"></tr>
+    <tr mat-row *matRowDef="let row; columns: displayColumns;"></tr>
+
+
+    <tr class="mat-row" *matNoDataRow>
+      <td class="mat-cell" colspan="4">Solicitação não encontrada! "{{input.value}}"</td>
+    </tr>
+  </table>
+
+
+
+  
+
+
+  

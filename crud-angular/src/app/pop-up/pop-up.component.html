@@ -1,0 +1,54 @@
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+<div class="formularioContato">
+        <label><h1>Nova solicitação</h1></label>
+    <form [formGroup]="soForm" (ngSubmit)="saveForm()"  enctype="multipart/form-data">
+        <label>
+            <span><i class="icon icon-user-1"></i> Descrição</span>
+            <input type="text" style="width: 560px;" name="nome"  formControlName="descricao" required="">
+        </label>
+        
+        <label>
+            <span><i class="icon icon-email"></i> Unidade</span>
+            <input  style="width: 560px;" type="text" name="email" formControlName="unidade" class="fade_8S">
+        </label>
+        <label>
+            <span><i class="icon icon-flag"></i> Area</span>
+            <input type="text" style="width: 560px;" name="assunto" formControlName="area" required="">
+        </label>
+        
+        <label>
+            <span><i class="icon icon-comment"></i> Regional</span>
+             <textarea name="mensagem" style="width: 560px;"  rows="3" formControlName="regional" required=""></textarea> 
+        </label>
+
+
+
+
+
+
+
+        <section class="example-section" [formGroup]="soForm" (ngSubmit)="saveForm()">
+            <h4>Informações adicionais</h4>
+            <p><mat-checkbox formControlName="elogio">Elogio</mat-checkbox></p>
+            <p><mat-checkbox formControlName="reclamacao">reclamação</mat-checkbox></p>
+            <p><mat-checkbox formControlName="sugestao">Sugestão</mat-checkbox></p>
+            <p><mat-checkbox formControlName="solicitacao">Solicitação</mat-checkbox></p>
+          </section>
+
+         <label>
+            <span><i class="icon icon-user-1"></i> Fato</span>
+            <input type="text" style="width: 560px;" name="nome" formControlName="fato" required="">
+        </label>
+        
+       
+       
+        <input type="button" style="width:560px;" class="btn btn-primary btn-lg" name="acao" type="submit" />
+
+    
+    </form>
+</div>
+ 
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>

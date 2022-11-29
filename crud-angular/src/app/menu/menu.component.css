@@ -1,0 +1,126 @@
+hr {
+  color: #145090;
+  margin-top: 40px;
+}
+.b3-hs__sidenav {
+  height: 100%;
+  width: 230px;
+  align-items: baseline;
+}
+
+.div-sidenav__span {
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.help-system__name {
+  display: block;
+  font-size: 15px;
+  font-weight: 700;
+  margin-bottom: 40px;
+}
+.avatar {
+  width: 31px;
+  display: inline;
+  margin-right: 15px;
+  border-radius: 50%;
+}
+.example-button-row button,
+.example-button-row a {
+  margin-right: 8px;
+}
+.button-exit {
+  font-size: 14px;
+  font-weight: 400;
+  display: block;
+  margin-left: 46px;
+  border-radius: 16px;
+  background-color: #ffd564 !important;
+  color: #004685 !important;
+  padding: 0px 40px !important;
+}
+.button-exit:active {
+  font-weight: 400;
+  display: block;
+  margin-left: 46px;
+  border-radius: 16px;
+  background-color: #ffe699 !important;
+  color: #004685 !important;
+  padding: 0px 40px !important;
+}
+.menu-button {
+  font-size: 15px;
+  text-align: left;
+  display: block;
+  color: #ffffff;
+  width: 198px;
+}
+.menu-button:hover {
+  background: #2bf7de;
+  color: #6d139b;
+}
+.menu-div {
+  margin-top: 30px;
+}
+.menu-span {
+  font-size: 22px;
+  font-weight: 700;
+}
+.button-exit__icon {
+  font-size: 14px !important;
+}
+.b3-hs__header {
+    height: 50px;
+}
+
+.b3-blue-bg {
+    background: #003778;
+}
+
+.b3-white-bg {
+    background: #f7f7f7;
+}
+
+.b3-blue-fg {
+    color: #004685;
+}
+
+.b3-gray-fg {
+    color: #717374;
+}
+/* # #3568a0 */
+section {
+  display: table;
+}
+
+.example-label {
+  display: table-cell;
+  font-size: 14px;
+  margin-left: 8px;
+  min-width: 120px;
+}
+
+.example-button-row {
+  display: table-cell;
+  max-width: 600px;
+}
+
+.example-button-row .mat-mdc-button-base {
+  margin: 8px 8px 8px 0;
+}
+
+.example-flex-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.example-button-container {
+  display: flex;
+  justify-content: center;
+  width: 120px;
+}
+
+/* purple #6d139b */
+/* green left #84ec97 */
+/* freen right #2bf7de */
